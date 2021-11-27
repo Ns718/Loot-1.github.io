@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="./images/weather1.png" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+			integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<title>Weather App</title>
+	</head>
+	<body>
+		<div class="spinner"><i class="fas fa-spinner"></i></div>
+		<div class="block">
+			<header class="header">
+				<div class="header__icon"><span></span></div>
+				<div class="header__nav">
+					<ul class="header__nav-list">
+						<li class="header__nav-list-item">
+							<a
+								href="#hourly"
+								class="header__nav-list-item__anchor"
+							>
+								hourly</a
+							>
+						</li>
+						<li class="header__nav-list-item">
+							<a
+								href="#now"
+								class="header__nav-list-item__anchor"
+							>
+								now</a
+							>
+						</li>
+						<li class="header__nav-list-item">
+							<a
+								href="#daily"
+								class="header__nav-list-item__anchor"
+							>
+								daily</a
+							>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<div class="block__head">
+				<div class="block__head-region">Region</div>
+				<div class="block__head-icon">
+					<i class="fas fa-cloud"></i>
+				</div>
+			</div>
+			<div class="block__temp">
+				<div class="block__temp-base">
+					<p class="block__temp-base-desc">Temperature:</p>
+					<p class="block__temp-base-value">temp</p>
+					<span class="block__temp-base-type">C</span>
+				</div>
+				<div class="block__temp-feels">
+					<p class="block__temp-feels-desc">Feels like:</p>
+					<p class="block__temp-feels-value">temp</p>
+					<span class="block__temp-feels-type">C</span>
+				</div>
+			</div>
+			<div class="block__state">description</div>
+			<div class="block__addition">
+				<div class="block__addition-wind">
+					<p class="block__addition-wind__head">wind</p>
+					<div class="block__addition-item-block">
+						<p class="block__addition-wind__info">...</p>
+						<span class="block__addition-wind__unit">m/s</span>
+					</div>
+				</div>
+				<div class="block__addition-pressure">
+					<p class="block__addition-pressure__head">pressure</p>
+					<div class="block__addition-item-block">
+						<p class="block__addition-pressure__info">...</p>
+						<span class="block__addition-wind__unit">hPa</span>
+					</div>
+				</div>
+				<div class="block__addition-humidity">
+					<p class="block__addition-humidity__head">humidity</p>
+					<div class="block__addition-item-block">
+						<p class="block__addition-humidity__info">...</p>
+						<span class="block__addition-wind__unit">%</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/config.js"></script>
+		<script src="./js/app.js"></script>
+	</body>
+</html>
